@@ -178,6 +178,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        Mapam\Providers\AppService::class,
+        Mapam\Providers\RouteService::class,
+
     ],
 
     /*
