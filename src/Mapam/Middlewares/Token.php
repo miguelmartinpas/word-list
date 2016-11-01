@@ -20,7 +20,8 @@ class Token {
         }
 
         if ($request->input('token') !== 'QWERTY') {
-            throw new HttpException(503); // should be 401
+            //throw new HttpException(401); // should be 401
+            return response()->view('isolateView::401', [], 401);
         }
 
         return $next($request);
